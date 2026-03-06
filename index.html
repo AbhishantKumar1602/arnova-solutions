@@ -3,8 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ArNova Solutions — Intelligence. Automation. Delivery.</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<title>ArNova Solutions — QA Automation, Fraud Intelligence & Software Products</title>
+<meta name="description" content="ArNova Solutions — QA automation, affiliate fraud detection, full-stack development and software products. Built by Abhishant Kumar. Gurugram, India.">
+<meta name="keywords" content="QA automation, fraud detection, affiliate fraud, Selenium, Python, full-stack developer, billing software, browser extension compliance, Gurugram, India">
+<meta name="author" content="Abhishant Kumar — ArNova Solutions">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ArNova Solutions — Intelligence. Automation. Delivery.">
+<meta property="og:description" content="QA automation, fraud intelligence, full-stack development and software products. Every system automated, evidence-backed, production-grade.">
+<meta property="og:url" content="https://arnovasolutions.netlify.app/">
+<meta property="og:site_name" content="ArNova Solutions">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ArNova Solutions">
+<meta name="twitter:description" content="QA automation, fraud intelligence, full-stack development. Built by Abhishant Kumar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap&font-display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #080c14;
@@ -318,6 +333,48 @@
   }
 
 
+  /* ── TECH STACK ─── */
+  .stack-grid { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+  .stack-pill { display: flex; align-items: center; gap: 8px; background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 10px 18px; font-family: var(--font-mono); font-size: 0.78rem; color: var(--text); transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s; cursor: default; }
+  .stack-pill:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
+  .stack-pill .sp-icon { font-size: 1.1rem; }
+
+  /* ── PROCESS ─── */
+  .process-steps { display: grid; grid-template-columns: repeat(5,1fr); gap: 0; position: relative; margin-top: 12px; }
+  .process-steps::before { content:''; position:absolute; top:28px; left:10%; right:10%; height:1px; background: linear-gradient(90deg, var(--c1), var(--c2), var(--c3)); opacity:0.35; z-index:0; }
+  .p-step { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 12px; position: relative; z-index:1; }
+  .p-num { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-head); font-weight: 800; font-size: 1.1rem; margin-bottom: 16px; border: 1px solid; flex-shrink:0; }
+  .p-step h4 { font-family: var(--font-head); font-size: 0.88rem; font-weight: 700; margin-bottom: 6px; }
+  .p-step p { font-size: 0.78rem; color: var(--muted); line-height: 1.6; margin:0; }
+
+  /* ── CTA BANNER ─── */
+  .cta-banner { background: linear-gradient(135deg, rgba(0,229,255,0.07) 0%, rgba(168,85,247,0.07) 50%, rgba(249,115,22,0.05) 100%); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 64px var(--pad); text-align: center; position: relative; overflow: hidden; }
+  .cta-banner::before { content:''; position:absolute; inset:0; background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(0,229,255,0.06), transparent 70%); pointer-events:none; }
+  .cta-banner h2 { font-family: var(--font-head); font-size: clamp(1.8rem,3.5vw,2.8rem); font-weight: 800; letter-spacing: -1px; margin-bottom: 14px; }
+  .cta-banner p { color: var(--muted); font-size: 1.05rem; max-width: 520px; margin: 0 auto 36px; line-height: 1.75; }
+  .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+  /* ── FOOTER UPGRADE ─── */
+  .footer-inner { max-width: var(--max); margin: 0 auto; padding: 48px var(--pad) 32px; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; }
+  .footer-col h5 { font-family: var(--font-head); font-size: 0.82rem; font-weight: 700; color: var(--text); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px; }
+  .footer-col a { display: block; color: var(--muted); text-decoration: none; font-size: 0.85rem; margin-bottom: 10px; transition: color 0.2s; }
+  .footer-col a:hover { color: var(--c1); }
+  .footer-col p { color: var(--muted); font-size: 0.85rem; line-height: 1.75; margin-bottom: 16px; }
+  .footer-bottom { max-width: var(--max); margin: 0 auto; padding: 20px var(--pad); border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+  .footer-bottom p { font-size: 0.78rem; color: var(--muted); }
+
+  @media (max-width: 900px) {
+    .process-steps { grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .process-steps::before { display: none; }
+    .footer-inner { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 600px) {
+    .process-steps { grid-template-columns: 1fr 1fr; gap: 20px; }
+    .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .cta-banner { padding: 44px var(--pad); }
+  }
+
 #loader{
 position:fixed;
 inset:0;
@@ -385,18 +442,7 @@ z-index:-2;
 100%{transform:translateX(3%) translateY(3%)}
 }
 
-/* ===== CURSOR SPOTLIGHT ===== */
-#spotlight{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-pointer-events:none;
-background:radial-gradient(circle 200px at var(--x) var(--y),
-rgba(255,255,255,0.08), transparent 60%);
-z-index:999;
-}
+/* spotlight defined above */
 
 /* ===== MAGNETIC BUTTON ===== */
 .magnetic{
@@ -467,10 +513,12 @@ p{font-size:1.1rem;line-height:1.8;}
     <li><a href="#projects">Projects</a></li>
     <li><a href="#automation">Automation</a></li>
     <li><a href="#skills">Skills</a></li>
+    <li><a href="#process">Process</a></li>
     <li><a href="#fraud">Lab</a></li>
+    <li><a href="#cta">Hire</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="#contact" class="nav-cta">Connect →</a>
+  <a href="#contact" class="nav-cta magnetic">Connect →</a>
   <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
 </div>
 </nav>
@@ -480,7 +528,7 @@ p{font-size:1.1rem;line-height:1.8;}
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
   <div class="hero-content">
-    <div class="hero-tag">ArNova Solutions · Est. 2024 · Gurugram, India</div>
+    <div class="hero-tag">ArNova Solutions · Est. 2025 · Gurugram, India</div>
     <h1>
       <span class="line1">Intelligence.</span>
       <span class="line2"><span class="ar">Auto</span><span class="nova">mation</span>.</span>
@@ -489,8 +537,8 @@ p{font-size:1.1rem;line-height:1.8;}
       A compact, precision-built company delivering <strong>QA automation, fraud intelligence, full-stack development,</strong> and <strong>software products</strong> — every system is automated, evidence-backed, and production-grade.
     </p>
     <div class="hero-btns">
-      <a href="#products" class="btn-primary">🚀 Our Products</a>
-      <a href="#projects" class="btn-outline">↗ View Projects</a>
+      <a href="#products" class="btn-primary magnetic">🚀 Our Products</a>
+      <a href="#projects" class="btn-outline magnetic">↗ View Projects</a>
     </div>
     <div class="hero-stats">
       <div class="stat-item">
@@ -549,11 +597,11 @@ p{font-size:1.1rem;line-height:1.8;}
 <div class="wrap">
 
   <div class="section-tag" style="color: var(--c1)">001 — Who We Are</div>
-  <div class="section-title">Built By One. <span class="accent-c1">Wired</span> For Many.</div>
+  <div class="section-title" data-aos="fade-up">Built By One. <span class="accent-c1">Wired</span> For Many.</div>
   <p class="section-sub">A compact company with extreme depth — every product, tool, and system ships with precision.</p>
   <div class="about-grid">
     <div class="about-text">
-      <p><strong>ArNova Solutions</strong> is a one-engineer, maximum-output technology company. Founded by Abhishant Kumar — QA Automation Tester, Systems Developer, and Intelligence Builder with 2+ years of production-grade engineering.</p>
+      <p><strong>ArNova Solutions</strong> is a one-engineer, maximum-output technology company. Founded by Abhishant Kumar — QA Automation Engineer, Systems Developer, and Intelligence Builder with 2+ years of production-grade engineering.</p>
       <p>Every project here is <strong>live on the web</strong>, every automation script runs in production, and every fraud detection tool has caught real violations. ArNova doesn't prototype — it delivers.</p>
       <p>From <strong>billing software</strong> to <strong>browser extension compliance frameworks</strong>, from <strong>e-commerce platforms</strong> to <strong>real-time clickjacking detectors</strong> — ArNova covers the full stack of software intelligence.</p>
       <p>The mission: build systems so automated, so reliable, so intelligent — that they run themselves. Businesses connect with ArNova for better product delivery, faster QA cycles, and fraud-free operations.</p>
@@ -562,7 +610,7 @@ p{font-size:1.1rem;line-height:1.8;}
       <h4>// FOUNDER PROFILE</h4>
       <div class="founder-info">
         <div class="fi-row"><span class="fi-label">Name</span><span class="fi-val" style="color:var(--c1)">Abhishant Kumar</span></div>
-        <div class="fi-row"><span class="fi-label">Role</span><span class="fi-val">QA Automation Tester</span></div>
+        <div class="fi-row"><span class="fi-label">Role</span><span class="fi-val">QA Automation Engineer</span></div>
         <div class="fi-row"><span class="fi-label">Experience</span><span class="fi-val">2+ Years</span></div>
         <div class="fi-row"><span class="fi-label">Location</span><span class="fi-val">Gurugram, India</span></div>
         <div class="fi-row"><span class="fi-label">Education</span><span class="fi-val">BCA — JNU Rajasthan</span></div>
@@ -584,10 +632,10 @@ p{font-size:1.1rem;line-height:1.8;}
 <div class="wrap">
 
   <div class="section-tag" style="color: var(--c2)">002 — What We Do</div>
-  <div class="section-title">Services & <span class="accent-c2">Expertise</span></div>
+  <div class="section-title" data-aos="fade-up">Services & <span class="accent-c2">Expertise</span></div>
   <p class="section-sub">End-to-end delivery across QA, automation, fraud intelligence, and full-stack development.</p>
   <div class="services-grid">
-    <div class="service-card c1">
+    <div class="service-card c1" data-aos="fade-up" data-aos-delay="0">
       <div class="service-icon">🤖</div>
       <h3 class="accent-c1">QA Automation</h3>
       <p>Full Selenium-Python frameworks: login flows, pagination, filtering, report generation, cross-browser regression — 94%+ coverage.</p>
@@ -595,7 +643,7 @@ p{font-size:1.1rem;line-height:1.8;}
         <span class="stag">Selenium</span><span class="stag">Python</span><span class="stag">GitHub Actions</span><span class="stag">CI/CD</span>
       </div>
     </div>
-    <div class="service-card c2">
+    <div class="service-card c2" data-aos="fade-up" data-aos-delay="80">
       <div class="service-icon">🛡️</div>
       <h3 class="accent-c2">Fraud Intelligence</h3>
       <p>Behavioral analysis detecting affiliate fraud, coupon manipulation, clickjacking, adware injection, and extension violations.</p>
@@ -603,7 +651,7 @@ p{font-size:1.1rem;line-height:1.8;}
         <span class="stag">Clickjacking</span><span class="stag">Adware Hunt</span><span class="stag">Redirect Map</span>
       </div>
     </div>
-    <div class="service-card c3">
+    <div class="service-card c3" data-aos="fade-up" data-aos-delay="160">
       <div class="service-icon">🌐</div>
       <h3 class="accent-c3">Full-Stack Development</h3>
       <p>Live production apps: e-commerce, chat, URL intelligence, blogs, property listings — all shipped with Node.js + MongoDB.</p>
@@ -611,7 +659,7 @@ p{font-size:1.1rem;line-height:1.8;}
         <span class="stag">Node.js</span><span class="stag">MongoDB</span><span class="stag">Express</span><span class="stag">Socket.IO</span>
       </div>
     </div>
-    <div class="service-card c4">
+    <div class="service-card c4" data-aos="fade-up" data-aos-delay="0">
       <div class="service-icon">📮</div>
       <h3 class="accent-c4">API Testing</h3>
       <p>REST endpoint validation: status codes, payloads, data contracts, schema checks — automated across environments via Postman.</p>
@@ -619,7 +667,7 @@ p{font-size:1.1rem;line-height:1.8;}
         <span class="stag">Postman</span><span class="stag">REST API</span><span class="stag">JSON Schema</span>
       </div>
     </div>
-    <div class="service-card c5">
+    <div class="service-card c5" data-aos="fade-up" data-aos-delay="80">
       <div class="service-icon">☁️</div>
       <h3 class="accent-c5">Cloud & DevOps</h3>
       <p>AWS S3 upload pipelines, GitHub Actions CI/CD, automated deployment, scheduled script execution — zero manual operation.</p>
@@ -627,7 +675,7 @@ p{font-size:1.1rem;line-height:1.8;}
         <span class="stag">AWS S3</span><span class="stag">GitHub Actions</span><span class="stag">Python</span>
       </div>
     </div>
-    <div class="service-card c6">
+    <div class="service-card c6" data-aos="fade-up" data-aos-delay="160">
       <div class="service-icon">📊</div>
       <h3 class="accent-c6">Data & Reporting</h3>
       <p>Dashboard reconstruction engines, Excel comparison tools, SQL validation, Pandas-driven data integrity — all automated.</p>
@@ -647,10 +695,10 @@ p{font-size:1.1rem;line-height:1.8;}
 <div class="wrap">
 
   <div class="section-tag" style="color: var(--c3)">003 — Products</div>
-  <div class="section-title">Ongoing <span class="accent-c3">Products</span></div>
+  <div class="section-title" data-aos="fade-up">Ongoing <span class="accent-c3">Products</span></div>
   <p class="section-sub">Real software. Real problems solved. Shipped and actively developed.</p>
   <div class="products-grid">
-    <!-- SCREENWISE BILLING — FLAGSHIP COMMERCIAL -->
+    <!-- ArNova BILLING SOFTWARE— FLAGSHIP COMMERCIAL -->
     <div class="product-card" style="border-color: rgba(34,211,164,0.2); grid-column: 1 / -1;">
       <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px;">
         <div style="flex:1; min-width:280px;">
@@ -659,7 +707,7 @@ p{font-size:1.1rem;line-height:1.8;}
             <span style="background: rgba(34,211,164,0.12); color: var(--c4); border: 1px solid rgba(34,211,164,0.25); padding: 3px 12px; border-radius: 100px; font-family: var(--font-mono); font-size: 0.65rem; letter-spacing:1px;">💰 COMMERCIAL · ₹14,000 ONE-TIME</span>
             <span style="background: rgba(168,85,247,0.1); color: var(--c2); border: 1px solid rgba(168,85,247,0.2); padding: 3px 12px; border-radius: 100px; font-family: var(--font-mono); font-size: 0.65rem;">ArNova Product</span>
           </div>
-          <h3 style="color: var(--c4); font-size: 1.5rem;">🧾 ScreenWise Billing</h3>
+          <h3 style="color: var(--c4); font-size: 1.5rem;">🧾 ArNova Billing Software</h3>
           <p style="font-size:0.92rem; margin-bottom:8px; color:var(--muted); font-style:italic;">Stop Losing Money to Manual Billing.</p>
           <p style="margin-bottom:16px;">A complete <strong style="color:var(--text)">offline billing system</strong> for clinics, shops & businesses. Professional PDF invoices, patient records, advance & due tracking, Excel reports — all in a single EXE. No internet. No subscription. <strong style="color:var(--text)">Forever yours.</strong> Already deployed at The PhysioRehab, Jaipur.</p>
           <ul class="product-features">
@@ -719,12 +767,12 @@ p{font-size:1.1rem;line-height:1.8;}
       </div>
     </div>
 
-    <!-- APP2APP MONITORING DASHBOARD — FLAGSHIP #2 -->
+    <!--MONITORING DASHBOARD — FLAGSHIP #2 -->
     <div class="product-card" style="border-color: rgba(168,85,247,0.2); grid-column: 1 / -1;">
       <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px;">
         <div style="flex:1; min-width:280px;">
           <span class="product-badge badge-live">✓ Live in Production</span>
-          <h3 style="color: var(--c2); font-size: 1.4rem;">🛡️ App2App Monitoring Dashboard</h3>
+          <h3 style="color: var(--c2); font-size: 1.4rem;">🛡️Monitoring Dashboard</h3>
           <p>A full-scale affiliate fraud intelligence platform — built entirely from scratch. Real-time monitoring across browser extensions, brand sites, affiliate networks, and VM servers. Every violation is captured, scored, and exportable.</p>
           <ul class="product-features">
             <li>9-card KPI system with week-over-week trend analysis and anomaly spike detection</li>
@@ -737,7 +785,7 @@ p{font-size:1.1rem;line-height:1.8;}
             <li>VM Adware Monitor — live server status, browser breakdown, adware timeline per VM</li>
             <li>Unified Evidence Viewer — screenshot gallery, inline video player, SAZ network log iframe</li>
             <li>Excel export for every table: records, risk report, brand summary, VM adware</li>
-            <li>Live API integration with app2app.io — server status, VM adware, running tasks</li>
+            <li>Live API integration — server status, VM adware, running tasks</li>
           </ul>
         </div>
         <!-- Mini stat panel -->
@@ -776,7 +824,7 @@ p{font-size:1.1rem;line-height:1.8;}
         <span style="font-size:0.68rem; padding:4px 12px; border-radius:100px; background:rgba(249,115,22,0.08); color:var(--c3); border:1px solid rgba(249,115,22,0.15); font-family: var(--font-mono);">Coupon Site Mapping</span>
         <span style="font-size:0.68rem; padding:4px 12px; border-radius:100px; background:rgba(34,211,164,0.08); color:var(--c4); border:1px solid rgba(34,211,164,0.15); font-family: var(--font-mono);">Evidence Modal (Video/Screenshot/SAZ)</span>
         <span style="font-size:0.68rem; padding:4px 12px; border-radius:100px; background:rgba(250,204,21,0.08); color:var(--c5); border:1px solid rgba(250,204,21,0.15); font-family: var(--font-mono);">4× Excel Export</span>
-        <span style="font-size:0.68rem; padding:4px 12px; border-radius:100px; background:rgba(244,63,94,0.08); color:var(--c6); border:1px solid rgba(244,63,94,0.15); font-family: var(--font-mono);">Live API — app2app.io</span>
+        <span style="font-size:0.68rem; padding:4px 12px; border-radius:100px; background:rgba(244,63,94,0.08); color:var(--c6); border:1px solid rgba(244,63,94,0.15); font-family: var(--font-mono);">Live API — Integration</span>
       </div>
     </div>
 
@@ -830,7 +878,7 @@ p{font-size:1.1rem;line-height:1.8;}
     <!-- WHONHOW -->
     <div class="product-card">
       <span class="product-badge badge-live">✓ Production Tested</span>
-      <h3>WhonHow Analytics</h3>
+      <h3>Dashboard Analytics</h3>
       <p>Compliance analytics dashboard — tested with 200+ cases, 45+ critical defects resolved. Real-time data integrity, filter accuracy, and cross-browser compatibility.</p>
       <ul class="product-features">
         <li>200+ test cases: functional, UI/UX, integration</li>
@@ -862,7 +910,7 @@ p{font-size:1.1rem;line-height:1.8;}
 <div class="wrap">
 
   <div class="section-tag" style="color: var(--c4)">004 — Live Projects</div>
-  <div class="section-title">Shipped &amp; <span class="accent-c4">Live</span></div>
+  <div class="section-title" data-aos="fade-up">Shipped &amp; <span class="accent-c4">Live</span></div>
   <p class="section-sub">Every project is deployed and running — across Netlify, Render, and GitHub. No mockups. No demos.</p>
 
   <!-- Platform legend -->
@@ -875,12 +923,12 @@ p{font-size:1.1rem;line-height:1.8;}
   <div class="projects-grid">
 
     <!-- 01 -->
-    <div class="proj-card" style="border-color: rgba(0,229,255,0.15);">
+    <div class="proj-card" data-aos="fade-up" style="border-color: rgba(0,229,255,0.15);">
       <div style="display:flex; justify-content:space-between; align-items:center;">
         <div class="proj-num">01 · FRAUD INTEL</div>
         <span style="width:8px;height:8px;border-radius:50%;background:#00ad9f;display:inline-block;" title="Netlify"></span>
       </div>
-      <h4>App2App Monitoring Dashboard</h4>
+      <h4>Monitoring Dashboard</h4>
       <p>Full affiliate fraud intelligence platform — 9 KPIs, swap detection, fingerprinting, risk scoring, live APIs.</p>
       <div class="proj-stack"><span class="ptag">JavaScript</span><span class="ptag">Chart.js</span><span class="ptag">REST API</span></div>
       <div style="display:flex; gap:10px; margin-top:12px; flex-wrap:wrap;">
@@ -890,7 +938,7 @@ p{font-size:1.1rem;line-height:1.8;}
     </div>
 
     <!-- 02 -->
-    <div class="proj-card" style="border-color: rgba(250,204,21,0.15);">
+    <div class="proj-card" data-aos="fade-up" style="border-color: rgba(250,204,21,0.15);">
       <div style="display:flex; justify-content:space-between; align-items:center;">
         <div class="proj-num">02 · COMMERCIAL</div>
         <span style="width:8px;height:8px;border-radius:50%;background:#00ad9f;display:inline-block;" title="Netlify"></span>
@@ -905,7 +953,7 @@ p{font-size:1.1rem;line-height:1.8;}
     </div>
 
     <!-- 03 -->
-    <div class="proj-card">
+    <div class="proj-card" data-aos="fade-up">
       <div style="display:flex; justify-content:space-between; align-items:center;">
         <div class="proj-num">03 · E-COMMERCE</div>
         <span style="width:8px;height:8px;border-radius:50%;background:#00ad9f;display:inline-block;" title="Netlify"></span>
@@ -920,7 +968,7 @@ p{font-size:1.1rem;line-height:1.8;}
     </div>
 
     <!-- 04 -->
-    <div class="proj-card">
+    <div class="proj-card" data-aos="fade-up">
       <div style="display:flex; justify-content:space-between; align-items:center;">
         <div class="proj-num">04 · STREAMING</div>
         <span style="width:8px;height:8px;border-radius:50%;background:#00ad9f;display:inline-block;" title="Netlify"></span>
@@ -935,7 +983,7 @@ p{font-size:1.1rem;line-height:1.8;}
     </div>
 
     <!-- 05 -->
-    <div class="proj-card">
+    <div class="proj-card" data-aos="fade-up">
       <div style="display:flex; justify-content:space-between; align-items:center;">
         <div class="proj-num">05 · REAL-TIME</div>
         <span style="width:8px;height:8px;border-radius:50%;background:#46e3b7;display:inline-block;" title="Render"></span>
@@ -950,7 +998,7 @@ p{font-size:1.1rem;line-height:1.8;}
     </div>
 
     <!-- 06 -->
-    <div class="proj-card">
+    <div class="proj-card" data-aos="fade-up">
       <div style="display:flex; justify-content:space-between; align-items:center;">
         <div class="proj-num">06 · INTELLIGENCE</div>
         <span style="width:8px;height:8px;border-radius:50%;background:#46e3b7;display:inline-block;" title="Render"></span>
@@ -965,7 +1013,7 @@ p{font-size:1.1rem;line-height:1.8;}
     </div>
 
     <!-- 07 -->
-    <div class="proj-card">
+    <div class="proj-card" data-aos="fade-up">
       <div style="display:flex; justify-content:space-between; align-items:center;">
         <div class="proj-num">07 · PLATFORM</div>
         <span style="width:8px;height:8px;border-radius:50%;background:#46e3b7;display:inline-block;" title="Render"></span>
@@ -980,7 +1028,7 @@ p{font-size:1.1rem;line-height:1.8;}
     </div>
 
     <!-- 08 -->
-    <div class="proj-card">
+    <div class="proj-card" data-aos="fade-up">
       <div style="display:flex; justify-content:space-between; align-items:center;">
         <div class="proj-num">08 · BLOGGING</div>
         <span style="width:8px;height:8px;border-radius:50%;background:#46e3b7;display:inline-block;" title="Render"></span>
@@ -995,7 +1043,7 @@ p{font-size:1.1rem;line-height:1.8;}
     </div>
 
     <!-- 09 -->
-    <div class="proj-card">
+    <div class="proj-card" data-aos="fade-up">
       <div style="display:flex; justify-content:space-between; align-items:center;">
         <div class="proj-num">09 · MONITOR</div>
         <span style="width:8px;height:8px;border-radius:50%;background:#46e3b7;display:inline-block;" title="Render"></span>
@@ -1010,7 +1058,7 @@ p{font-size:1.1rem;line-height:1.8;}
     </div>
 
     <!-- 10 -->
-    <div class="proj-card">
+    <div class="proj-card" data-aos="fade-up">
       <div style="display:flex; justify-content:space-between; align-items:center;">
         <div class="proj-num">10 · UTILITY</div>
         <span style="width:8px;height:8px;border-radius:50%;background:var(--muted);display:inline-block;" title="GitHub"></span>
@@ -1024,12 +1072,12 @@ p{font-size:1.1rem;line-height:1.8;}
     </div>
 
     <!-- 11 -->
-    <div class="proj-card" style="border-color: rgba(34,211,164,0.15);">
+    <div class="proj-card" data-aos="fade-up" style="border-color: rgba(34,211,164,0.15);">
       <div style="display:flex; justify-content:space-between; align-items:center;">
         <div class="proj-num">11 · BILLING</div>
         <span style="width:8px;height:8px;border-radius:50%;background:#00ad9f;display:inline-block;" title="Netlify"></span>
       </div>
-      <h4>ScreenWise Billing <span style="color:var(--c4); font-size:0.68rem; font-family:var(--font-mono);">₹14,000</span></h4>
+      <h4>ArNova Billing Software <span style="color:var(--c4); font-size:0.68rem; font-family:var(--font-mono);">₹14,000</span></h4>
       <p>Complete offline billing system — PDF invoices, advance/due tracking, SQLite DB, Excel export. Single EXE. Already live at The PhysioRehab, Jaipur.</p>
       <div class="proj-stack"><span class="ptag">Python</span><span class="ptag">PyQt6</span><span class="ptag">SQLite</span><span class="ptag">PyInstaller</span></div>
       <div style="display:flex; gap:10px; margin-top:12px; flex-wrap:wrap;">
@@ -1039,7 +1087,7 @@ p{font-size:1.1rem;line-height:1.8;}
     </div>
 
     <!-- 12 -->
-    <div class="proj-card">
+    <div class="proj-card" data-aos="fade-up">
       <div style="display:flex; justify-content:space-between; align-items:center;">
         <div class="proj-num">12 · MINI APPS</div>
         <span style="width:8px;height:8px;border-radius:50%;background:#00ad9f;display:inline-block;" title="Netlify"></span>
@@ -1076,10 +1124,10 @@ p{font-size:1.1rem;line-height:1.8;}
 <div class="wrap">
 
   <div class="section-tag" style="color: var(--c3)">005 — Automation Arsenal</div>
-  <div class="section-title">Scripts That <span class="accent-c3">Run Themselves</span></div>
+  <div class="section-title" data-aos="fade-up">Scripts That <span class="accent-c3">Run Themselves</span></div>
   <p class="section-sub">Every repetitive task gets automated. These scripts run silently, require zero manual input, and solve real daily problems.</p>
 
-  <div style="display:grid; grid-template-columns: repeat(3,1fr); gap:18px; max-width:1100px; grid-auto-flow: dense;">
+  <div style="display:grid; grid-template-columns: repeat(3,1fr); gap:18px; width:100%; grid-auto-flow: dense;">
 
     <div class="fraud-card" style="border-color: rgba(249,115,22,0.15);">
       <div class="fraud-idx" style="color:var(--c3);">SCRIPT · 01</div>
@@ -1328,11 +1376,11 @@ p{font-size:1.1rem;line-height:1.8;}
 <div class="wrap">
 
   <div class="section-tag" style="color: var(--c5)">006 — Skills & Stack</div>
-  <div class="section-title">Tools of the <span class="accent-c5">Trade</span></div>
+  <div class="section-title" data-aos="fade-up">Tools of the <span class="accent-c5">Trade</span></div>
   <p class="section-sub">Core competencies built through production deployments — not tutorials.</p>
   <div class="skills-area">
     <div class="skills-categories">
-      <div class="skill-cat">
+      <div class="skill-cat" data-aos="fade-up">
         <h4><span style="color:var(--c1)">⚡</span> Automation</h4>
         <div class="skill-list">
           <div class="skill-item">
@@ -1422,6 +1470,50 @@ p{font-size:1.1rem;line-height:1.8;}
 </div>
 </section>
 
+
+<hr class="divider">
+
+<!-- TECH STACK -->
+<section id="stack" class="fade-in">
+<div class="wrap">
+  <div class="section-tag" style="color: var(--c1)" data-aos="fade-up">009 — Tech Stack</div>
+  <div class="section-title" data-aos="fade-up">Tools & <span class="accent-c1">Technologies</span></div>
+  <p class="section-sub" data-aos="fade-up">Every tool is chosen for one reason — it gets the job done in production, not just demos.</p>
+
+  <div data-aos="fade-up">
+    <div style="font-family:var(--font-mono); font-size:0.68rem; color:var(--c2); letter-spacing:2px; margin-bottom:14px; text-transform:uppercase;">// Automation & Testing</div>
+    <div class="stack-grid" style="margin-bottom:28px;">
+      <div class="stack-pill" style="border-color:rgba(0,229,255,0.18)"><span class="sp-icon">🐍</span>Python</div>
+      <div class="stack-pill" style="border-color:rgba(0,229,255,0.18)"><span class="sp-icon">🤖</span>Selenium</div>
+      <div class="stack-pill" style="border-color:rgba(0,229,255,0.18)"><span class="sp-icon">🎭</span>Playwright</div>
+      <div class="stack-pill" style="border-color:rgba(0,229,255,0.18)"><span class="sp-icon">📮</span>Postman</div>
+      <div class="stack-pill" style="border-color:rgba(0,229,255,0.18)"><span class="sp-icon">⚙️</span>GitHub Actions</div>
+      <div class="stack-pill" style="border-color:rgba(0,229,255,0.18)"><span class="sp-icon">🔄</span>CI/CD Pipelines</div>
+    </div>
+
+    <div style="font-family:var(--font-mono); font-size:0.68rem; color:var(--c3); letter-spacing:2px; margin-bottom:14px; text-transform:uppercase;">// Full-Stack Development</div>
+    <div class="stack-grid" style="margin-bottom:28px;">
+      <div class="stack-pill" style="border-color:rgba(249,115,22,0.18)"><span class="sp-icon">🌐</span>Node.js</div>
+      <div class="stack-pill" style="border-color:rgba(249,115,22,0.18)"><span class="sp-icon">⚡</span>Express.js</div>
+      <div class="stack-pill" style="border-color:rgba(249,115,22,0.18)"><span class="sp-icon">🍃</span>MongoDB</div>
+      <div class="stack-pill" style="border-color:rgba(249,115,22,0.18)"><span class="sp-icon">🔌</span>Socket.IO</div>
+      <div class="stack-pill" style="border-color:rgba(249,115,22,0.18)"><span class="sp-icon">🎨</span>HTML / CSS / JS</div>
+      <div class="stack-pill" style="border-color:rgba(249,115,22,0.18)"><span class="sp-icon">🖥️</span>PyQt6</div>
+    </div>
+
+    <div style="font-family:var(--font-mono); font-size:0.68rem; color:var(--c4); letter-spacing:2px; margin-bottom:14px; text-transform:uppercase;">// Data & Cloud</div>
+    <div class="stack-grid" style="margin-bottom:28px;">
+      <div class="stack-pill" style="border-color:rgba(34,211,164,0.18)"><span class="sp-icon">☁️</span>AWS S3</div>
+      <div class="stack-pill" style="border-color:rgba(34,211,164,0.18)"><span class="sp-icon">🗃️</span>SQLite / SQL</div>
+      <div class="stack-pill" style="border-color:rgba(34,211,164,0.18)"><span class="sp-icon">📊</span>Pandas</div>
+      <div class="stack-pill" style="border-color:rgba(34,211,164,0.18)"><span class="sp-icon">📋</span>Excel / openpyxl</div>
+      <div class="stack-pill" style="border-color:rgba(34,211,164,0.18)"><span class="sp-icon">🌐</span>Netlify / Render</div>
+      <div class="stack-pill" style="border-color:rgba(34,211,164,0.18)"><span class="sp-icon">🤖</span>AI APIs (OpenRouter)</div>
+    </div>
+  </div>
+</div>
+</section>
+
 <hr class="divider">
 
 <!-- FRAUD LAB -->
@@ -1429,69 +1521,69 @@ p{font-size:1.1rem;line-height:1.8;}
 <div class="wrap">
 
   <div class="section-tag" style="color: var(--c6)">007 — Fraud Lab</div>
-  <div class="section-title">Behavioral <span class="accent-c6">Intelligence</span> Lab</div>
+  <div class="section-title" data-aos="fade-up">Behavioral <span class="accent-c6">Intelligence</span> Lab</div>
   <p class="section-sub">12+ specialized tools built internally at VPT — detecting, mapping, and exposing affiliate fraud, coupon manipulation, SERP hijacking, and extension behavioral anomalies. All automated. All evidence-backed.</p>
 
   <div class="fraud-grid">
-    <div class="fraud-card">
+    <div class="fraud-card" data-aos="fade-up" data-aos-delay="0">
       <div class="fraud-idx">LAB · 01</div>
       <h4>Clickjacking Detection Framework</h4>
       <p>Collects 10–20 pages of URLs per keyword, visits each domain, simulates clicks, detects hidden redirections and notification abuse traps. Built from <code style="font-size:0.72rem; color:var(--c6);">AK_Clickjacking_Wpn</code>.</p>
     </div>
-    <div class="fraud-card">
+    <div class="fraud-card" data-aos="fade-up" data-aos-delay="80">
       <div class="fraud-idx">LAB · 02</div>
       <h4>Inline Adware Hunting System</h4>
       <p>Searches adware keywords across engines, scrapes sponsored links, visits each landing page, checks keyword matches — full screenshot evidence output. Source: <code style="font-size:0.72rem; color:var(--c6);">Adware Hunting</code>.</p>
     </div>
-    <div class="fraud-card">
+    <div class="fraud-card" data-aos="fade-up" data-aos-delay="160">
       <div class="fraud-idx">LAB · 03</div>
       <h4>Coupon Site Scraper + Network Mapper</h4>
       <p>Scrapes all brand listings from coupon sites, follows every redirect to expose which affiliate network is running behind each coupon. Source: <code style="font-size:0.72rem; color:var(--c6);">Couponsite Scrapping</code> + <code style="font-size:0.72rem; color:var(--c6);">Coupon Site Crawler</code>.</p>
     </div>
-    <div class="fraud-card">
+    <div class="fraud-card" data-aos="fade-up" data-aos-delay="0">
       <div class="fraud-idx">LAB · 04</div>
       <h4>Web Extension Behavior Monitor</h4>
       <p>Tests browser extensions across brand sites to detect injected cashback popups, discount overlays, and click-hijacking during active sessions. Source: <code style="font-size:0.72rem; color:var(--c6);">Web_Extension_Scrapping</code> + <code style="font-size:0.72rem; color:var(--c6);">ExtensionScraper</code>.</p>
     </div>
-    <div class="fraud-card">
+    <div class="fraud-card" data-aos="fade-up" data-aos-delay="80">
       <div class="fraud-idx">LAB · 05</div>
       <h4>SERP Modification Checker</h4>
       <p>Detects when browser extensions modify Google/Bing search results — injecting ads, swapping links, or altering organic rankings. Source: <code style="font-size:0.72rem; color:var(--c6);">Check Serp Modification by Ext</code>.</p>
     </div>
-    <div class="fraud-card">
+    <div class="fraud-card" data-aos="fade-up" data-aos-delay="160">
       <div class="fraud-idx">LAB · 06</div>
       <h4>SERP Link Extractor</h4>
       <p>Extracts all links from search engine result pages for a given keyword — feeds directly into the adware and redirect detection pipeline. Source: <code style="font-size:0.72rem; color:var(--c6);">Link_Extractor_From_SERP</code>.</p>
     </div>
-    <div class="fraud-card">
+    <div class="fraud-card" data-aos="fade-up" data-aos-delay="0">
       <div class="fraud-idx">LAB · 07</div>
       <h4>Typosquatting / Domain Redirect Tracker</h4>
       <p>Opens typo and tracking domains one by one, follows every redirect chain, logs each hop until the final affiliate destination is confirmed. Source: <code style="font-size:0.72rem; color:var(--c6);">Typo Sqotting</code>.</p>
     </div>
-    <div class="fraud-card">
+    <div class="fraud-card" data-aos="fade-up" data-aos-delay="80">
       <div class="fraud-idx">LAB · 08</div>
       <h4>Extension Popup Injector Detector</h4>
       <p>Detects when extensions inject popup overlays — cashback prompts, discount banners, notification traps — into brand pages during live sessions. Source: <code style="font-size:0.72rem; color:var(--c6);">Ext popup Code</code>.</p>
     </div>
-    <div class="fraud-card">
+    <div class="fraud-card" data-aos="fade-up" data-aos-delay="160">
       <div class="fraud-idx">LAB · 09</div>
       <h4>Unique Advertiser ID Analyzer</h4>
       <p>Groups and ranks advertiser/merchant IDs being targeted across networks and brands — maps the full attack surface per advertiser. Source: <code style="font-size:0.72rem; color:var(--c6);">unique advertiser code</code>.</p>
     </div>
-    <div class="fraud-card">
+    <div class="fraud-card" data-aos="fade-up" data-aos-delay="0">
       <div class="fraud-idx">LAB · 10</div>
       <h4>VM Wise Adware Tracker</h4>
-      <p>Tracks which adware extensions are installed across which VMs and browsers — feeds the App2App Dashboard VM Adware tab via live API. Source: <code style="font-size:0.72rem; color:var(--c6);">App2App_VmWiseAdwareAdd</code>.</p>
+      <p>Tracks which adware extensions are installed across which VMs and browsers — feeds the Dashboard VM Adware tab via live API. Source: <code style="font-size:0.72rem; color:var(--c6);">VmWiseAdwareAdd</code>.</p>
     </div>
-    <div class="fraud-card">
+    <div class="fraud-card" data-aos="fade-up" data-aos-delay="80">
       <div class="fraud-idx">LAB · 11</div>
       <h4>Honey Notification Trap</h4>
       <p>Monitors and traps abusive notification push patterns from adware extensions — identifies notification abuse campaigns in real time. Source: <code style="font-size:0.72rem; color:var(--c6);">Honey Notification</code>.</p>
     </div>
-    <div class="fraud-card">
+    <div class="fraud-card" data-aos="fade-up" data-aos-delay="160">
       <div class="fraud-idx">LAB · 12</div>
-      <h4>WhonHow Dashboard Data Server</h4>
-      <p>Backend data pipeline that feeds the WhonHow Analytics compliance dashboard — scrapes, processes, and structures App2App findings for reporting. Source: <code style="font-size:0.72rem; color:var(--c6);">WhoNHow_App2App_Dashboard_data_server</code>.</p>
+      <h4>Dashboard Data Server</h4>
+      <p>Backend data pipeline that feeds the Analytics compliance dashboard — scrapes, processes, and structures findings for reporting. Source: <code style="font-size:0.72rem; color:var(--c6);">Dashboard_data_server</code>.</p>
     </div>
   </div>
 
@@ -1505,6 +1597,107 @@ p{font-size:1.1rem;line-height:1.8;}
 
 </div>
 </section>
+<hr class="divider">
+
+<!-- PROCESS -->
+<section id="process" class="fade-in">
+<div class="wrap">
+  <div class="section-tag" style="color: var(--c2)" data-aos="fade-up">010 — How It Works</div>
+  <div class="section-title" data-aos="fade-up">The <span class="accent-c2">Process</span></div>
+  <p class="section-sub" data-aos="fade-up">Every engagement follows the same discipline — understand, design, build, ship, monitor. No shortcuts.</p>
+
+  <div class="process-steps" data-aos="fade-up">
+    <div class="p-step">
+      <div class="p-num" style="background:rgba(0,229,255,0.08); border-color:rgba(0,229,255,0.25); color:var(--c1);">01</div>
+      <h4>Discovery</h4>
+      <p>Understand the problem — automation gap, fraud pattern, or product requirement. Define scope and constraints clearly.</p>
+    </div>
+    <div class="p-step">
+      <div class="p-num" style="background:rgba(168,85,247,0.08); border-color:rgba(168,85,247,0.25); color:var(--c2);">02</div>
+      <h4>Architecture</h4>
+      <p>Design the system — choosing the right stack, data flow, automation triggers, and edge case handling upfront.</p>
+    </div>
+    <div class="p-step">
+      <div class="p-num" style="background:rgba(249,115,22,0.08); border-color:rgba(249,115,22,0.25); color:var(--c3);">03</div>
+      <h4>Build</h4>
+      <p>Write clean, documented, production-grade code. Every feature tested. Every edge case covered. No prototype quality.</p>
+    </div>
+    <div class="p-step">
+      <div class="p-num" style="background:rgba(34,211,164,0.08); border-color:rgba(34,211,164,0.25); color:var(--c4);">04</div>
+      <h4>Deploy</h4>
+      <p>Ship to production — cloud deployment, CI/CD pipelines, zero manual operation on Day 1.</p>
+    </div>
+    <div class="p-step">
+      <div class="p-num" style="background:rgba(250,204,21,0.08); border-color:rgba(250,204,21,0.25); color:var(--c5);">05</div>
+      <h4>Monitor</h4>
+      <p>The system runs itself. Automated alerts, scheduled reports, and continuous improvement cycles keep it production-fit.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- ANIMATED DASHBOARD DEMO -->
+<section style="padding: 60px 0;">
+<div class="wrap">
+  <div class="section-tag" style="color: var(--c4)" data-aos="fade-up">008 — Live Intelligence</div>
+  <div class="section-title" data-aos="fade-up">Real-Time <span class="accent-c4">Fraud Feed</span></div>
+  <p class="section-sub" data-aos="fade-up">Simulated live output of the fraud detection pipeline — signals, clean sessions, and accuracy in real time.</p>
+  <div class="dashboard" data-aos="fade-up">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; flex-wrap:wrap; gap:12px;">
+      <div>
+        <div style="font-family:var(--font-mono); font-size:0.65rem; color:var(--c6); letter-spacing:2px; margin-bottom:6px; display:flex; align-items:center; gap:8px;"><span style="width:6px;height:6px;border-radius:50%;background:var(--c6);display:inline-block;animation:pulse 1.5s infinite;"></span>LIVE FRAUD SIGNALS</div>
+        <h2 style="font-family:var(--font-head); font-size:1.4rem; font-weight:800; margin:0; letter-spacing:-0.5px;">Detection Dashboard</h2>
+      </div>
+      <div style="display:flex; gap:24px; flex-wrap:wrap;">
+        <div style="text-align:center; background:var(--bg3); padding:12px 18px; border-radius:10px; border:1px solid var(--border);">
+          <div style="font-family:var(--font-head); font-size:1.6rem; font-weight:800; color:var(--c6);" id="dash-blocked">0</div>
+          <div style="font-size:0.62rem; color:var(--muted); text-transform:uppercase; letter-spacing:1px; margin-top:2px;">Blocked</div>
+        </div>
+        <div style="text-align:center; background:var(--bg3); padding:12px 18px; border-radius:10px; border:1px solid var(--border);">
+          <div style="font-family:var(--font-head); font-size:1.6rem; font-weight:800; color:var(--c4);" id="dash-clean">0</div>
+          <div style="font-size:0.62rem; color:var(--muted); text-transform:uppercase; letter-spacing:1px; margin-top:2px;">Clean</div>
+        </div>
+        <div style="text-align:center; background:var(--bg3); padding:12px 18px; border-radius:10px; border:1px solid var(--border);">
+          <div style="font-family:var(--font-head); font-size:1.6rem; font-weight:800; color:var(--c5);" id="dash-score">0%</div>
+          <div style="font-size:0.62rem; color:var(--muted); text-transform:uppercase; letter-spacing:1px; margin-top:2px;">Accuracy</div>
+        </div>
+      </div>
+    </div>
+    <canvas id="fraudChart" height="80"></canvas>
+    <div style="display:flex; gap:20px; margin-top:12px; flex-wrap:wrap; align-items:center;">
+      <span style="font-family:var(--font-mono); font-size:0.62rem; color:var(--muted); display:flex; align-items:center; gap:6px;"><span style="width:10px;height:2px;background:var(--c6);border-radius:2px;display:inline-block;"></span>Fraud Signals</span>
+      <span style="font-family:var(--font-mono); font-size:0.62rem; color:var(--muted); display:flex; align-items:center; gap:6px;"><span style="width:10px;height:2px;background:var(--c4);border-radius:2px;display:inline-block;"></span>Clean Sessions</span>
+      <span style="font-family:var(--font-mono); font-size:0.62rem; color:var(--muted); margin-left:auto;">↻ Updates every 2s &nbsp;·&nbsp; Simulated live data</span>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<hr class="divider">
+
+<!-- CTA BANNER -->
+<section id="cta" class="fade-in">
+<div class="wrap">
+  <div class="cta-banner" data-aos="fade-up">
+    <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--c1); letter-spacing:2px; margin-bottom:18px; text-transform:uppercase;">// Ready to Build?</div>
+    <h2>Let's Automate Your <span class="accent-c1">Entire Workflow.</span></h2>
+    <p>Whether it's a QA challenge, affiliate fraud problem, billing software, or a full product from scratch — ArNova delivers it production-ready.</p>
+    <div class="cta-btns">
+      <a href="#contact" class="btn-primary magnetic" style="font-size:1rem; padding:15px 34px;">🚀 Start a Project</a>
+      <a href="https://wa.me/919929321602" target="_blank" class="btn-outline magnetic" style="font-size:1rem; padding:15px 34px;">💬 WhatsApp Now</a>
+      <a href="https://www.linkedin.com/in/abhishant-kumar-372b18279/" target="_blank" class="btn-outline magnetic" style="font-size:1rem; padding:15px 34px;">💼 Connect on LinkedIn</a>
+    </div>
+    <div style="display:flex; gap:32px; justify-content:center; margin-top:44px; flex-wrap:wrap;">
+      <div style="text-align:center;"><div style="font-family:var(--font-head); font-size:2rem; font-weight:800; color:var(--c1);">35+</div><div style="font-size:0.75rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-top:3px;">Projects Shipped</div></div>
+      <div style="text-align:center;"><div style="font-family:var(--font-head); font-size:2rem; font-weight:800; color:var(--c2);">150+</div><div style="font-size:0.75rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-top:3px;">Bugs Caught</div></div>
+      <div style="text-align:center;"><div style="font-family:var(--font-head); font-size:2rem; font-weight:800; color:var(--c3);">70%</div><div style="font-size:0.75rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-top:3px;">Time Saved</div></div>
+      <div style="text-align:center;"><div style="font-family:var(--font-head); font-size:2rem; font-weight:800; color:var(--c4);">₹14k</div><div style="font-size:0.75rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-top:3px;">Software Sold</div></div>
+    </div>
+  </div>
+</div>
+</section>
 
 <hr class="divider">
 
@@ -1513,56 +1706,52 @@ p{font-size:1.1rem;line-height:1.8;}
 <div class="wrap">
 
   <div class="section-tag" style="color: var(--c4)">008 — Connect</div>
-  <div class="section-title">Let's Build <span class="accent-c4">Something</span></div>
+  <div class="section-title" data-aos="fade-up">Let's Build <span class="accent-c4">Something</span></div>
   <div class="contact-area">
     <div class="contact-info">
       <p>Whether it's a QA challenge, a fraud detection problem, billing software integration, or building something new end-to-end — ArNova delivers. Reach out directly.</p>
       <div class="contact-links">
-        <a href="/cdn-cgi/l/email-protection#1677747e7f657e7778627d637b77642720262456717b777f7a3875797b" class="clink">
+        <a href="mailto:official.abhishant.kumar@gmail.com" class="clink">
           <span class="clink-icon">✉️</span>
           <div>
             <div class="clink-label">Email</div>
-            <div class="clink-val"><span class="__cf_email__" data-cfemail="41202329283229202f352a342c20337077717301262c20282d6f222e2c">[email&#160;protected]</span></div>
           </div>
         </a>
         <a href="https://www.linkedin.com/in/abhishant-kumar-372b18279/" target="_blank" class="clink">
           <span class="clink-icon">💼</span>
           <div>
             <div class="clink-label">LinkedIn</div>
-            <div class="clink-val">linkedin.com/in/abhishant-kumar</div>
           </div>
         </a>
         <a href="https://github.com/AbhishantKumar1602" target="_blank" class="clink">
           <span class="clink-icon">⌨️</span>
           <div>
             <div class="clink-label">GitHub</div>
-            <div class="clink-val">github.com/AbhishantKumar1602</div>
           </div>
         </a>
         <a href="https://akv2portfolio.netlify.app/" target="_blank" class="clink">
           <span class="clink-icon">🌐</span>
           <div>
             <div class="clink-label">Portfolio</div>
-            <div class="clink-val">akv2portfolio.netlify.app</div>
           </div>
         </a>
-        <a href="tel:+919929321602" class="clink">
-          <span class="clink-icon">📞</span>
+        <a href="https://wa.me/919929321602" target="_blank" class="clink">
+          <span class="clink-icon">💬</span>
           <div>
-            <div class="clink-label">Phone</div>
-            <div class="clink-val">+91 9929321602</div>
+            <div class="clink-label">WhatsApp</div>
           </div>
         </a>
       </div>
     </div>
     <div class="contact-form">
-      <input type="text" placeholder="Your Name" />
-      <input type="email" placeholder="Email Address" />
-      <input type="text" placeholder="Subject (QA / Product / Collaboration / Other)" />
-      <textarea rows="5" placeholder="Tell us what you're building or need help with..."></textarea>
-      <button onclick="alert('Message sent! Abhishant will reach out shortly.')" class="btn-primary" style="border:none; cursor:pointer; justify-content: center; font-size:0.88rem;">
+      <input type="text" id="cf-name" placeholder="Your Name" />
+      <input type="email" id="cf-email" placeholder="Email Address" />
+      <input type="text" id="cf-subject" placeholder="Subject (QA / Product / Collaboration / Other)" />
+      <textarea id="cf-message" rows="5" placeholder="Tell us what you're building or need help with..."></textarea>
+      <button id="cf-send" class="btn-primary" style="border:none; cursor:pointer; justify-content: center; font-size:0.88rem;">
         Send Message →
       </button>
+      <div id="cf-status" style="display:none; font-family:var(--font-mono); font-size:0.78rem; padding:10px 14px; border-radius:8px; text-align:center;"></div>
     </div>
   </div>
 
@@ -1572,34 +1761,76 @@ p{font-size:1.1rem;line-height:1.8;}
 <!-- FOOTER -->
 <footer>
 <div class="footer-inner">
-  <div>
-    <div class="fl"><span style="color:var(--c1)">Ar</span><span style="color:var(--c2)">Nova</span><span style="color:var(--c3)">.</span></div>
-    <p style="margin-top:6px;">Intelligence. Automation. Delivery.</p>
+  <div class="footer-col">
+    <div class="fl" style="font-size:1.5rem; margin-bottom:10px;"><span style="color:var(--c1)">Ar</span><span style="color:var(--c2)">Nova</span><span style="color:var(--c3)">.</span></div>
+    <p>A compact, precision-built technology company delivering QA automation, fraud intelligence, and software products.</p>
+    <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:4px;">
+      <a href="https://github.com/AbhishantKumar1602" target="_blank" style="font-family:var(--font-mono); font-size:0.7rem; color:var(--muted); text-decoration:none; padding:5px 10px; border:1px solid var(--border); border-radius:6px; transition:border-color 0.2s, color 0.2s;" onmouseover="this.style.color='var(--c1)';this.style.borderColor='var(--c1)'" onmouseout="this.style.color='var(--muted)';this.style.borderColor='var(--border)'">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/abhishant-kumar-372b18279/" target="_blank" style="font-family:var(--font-mono); font-size:0.7rem; color:var(--muted); text-decoration:none; padding:5px 10px; border:1px solid var(--border); border-radius:6px; transition:border-color 0.2s, color 0.2s;" onmouseover="this.style.color='var(--c2)';this.style.borderColor='var(--c2)'" onmouseout="this.style.color='var(--muted)';this.style.borderColor='var(--border)'">LinkedIn ↗</a>
+      <a href="https://akv2portfolio.netlify.app/" target="_blank" style="font-family:var(--font-mono); font-size:0.7rem; color:var(--muted); text-decoration:none; padding:5px 10px; border:1px solid var(--border); border-radius:6px; transition:border-color 0.2s, color 0.2s;" onmouseover="this.style.color='var(--c4)';this.style.borderColor='var(--c4)'" onmouseout="this.style.color='var(--muted)';this.style.borderColor='var(--border)'">Portfolio ↗</a>
+    </div>
   </div>
-  <p>© 2024–2026 ArNova Solutions · Founded by Abhishant Kumar · Gurugram, India</p>
-  <p style="font-family: var(--font-mono); font-size:0.7rem; color: var(--c4)">● All Systems Operational</p>
+
+  <div class="footer-col">
+    <h5>Services</h5>
+    <a href="#services">QA Automation</a>
+    <a href="#services">Fraud Intelligence</a>
+    <a href="#services">Full-Stack Dev</a>
+    <a href="#services">API Testing</a>
+    <a href="#services">Cloud & DevOps</a>
+    <a href="#services">Data & Reporting</a>
+  </div>
+
+  <div class="footer-col">
+    <h5>Products</h5>
+    <a href="https://arnovabillingapp.netlify.app/" target="_blank">ScreenWise Billing</a>
+    <a href="https://akmonitoring.netlify.app/" target="_blank">App2App Dashboard</a>
+    <a href="https://notificationmanagerv2.netlify.app/" target="_blank">Notification Manager</a>
+    <a href="#projects">All Projects →</a>
+  </div>
+
+  <div class="footer-col">
+    <h5>Contact</h5>
+    <a href="mailto:official.abhishant.kumar@gmail.com">✉ Email</a>
+    <a href="https://wa.me/919929321602" target="_blank">💬 WhatsApp</a>
+    <a href="https://www.linkedin.com/in/abhishant-kumar-372b18279/" target="_blank">💼 LinkedIn</a>
+    <a href="https://github.com/AbhishantKumar1602" target="_blank">⌨ GitHub</a>
+    <div style="margin-top:14px; padding:10px 14px; background:rgba(34,211,164,0.06); border:1px solid rgba(34,211,164,0.15); border-radius:8px;">
+      <div style="font-family:var(--font-mono); font-size:0.62rem; color:var(--c4); margin-bottom:3px; letter-spacing:1px;">STATUS</div>
+      <div style="font-size:0.78rem; color:var(--text); display:flex; align-items:center; gap:6px;"><span style="width:6px;height:6px;border-radius:50%;background:var(--c4);display:inline-block;animation:pulse 2s infinite;"></span>Open to Collaborate</div>
+    </div>
+  </div>
+</div>
+<div class="footer-bottom">
+  <p>© 2025–2026 <strong style="color:var(--text)">ArNova Solutions</strong> · Founded by Abhishant Kumar · Gurugram, India</p>
+  <p style="font-family:var(--font-mono); font-size:0.68rem;">Intelligence · Automation · Delivery</p>
 </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Skill bars animate on scroll
-  const skillObserver = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.querySelectorAll('.skill-fill').forEach(bar => {
-          const w = bar.style.width;
-          bar.style.width = '0%';
-          setTimeout(() => { bar.style.transition = 'width 1s ease'; bar.style.width = w; }, 100);
-        });
-      }
-    });
-  }, { threshold: 0.3 });
-  document.querySelectorAll('.skills-categories').forEach(el => skillObserver.observe(el));
+<script>
+/* ── SKILL BARS — animate on scroll ── */
+const skillObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.skill-fill').forEach(bar => {
+        const w = bar.style.width;
+        bar.style.width = '0%';
+        setTimeout(() => { bar.style.transition = 'width 1s ease'; bar.style.width = w; }, 100);
+      });
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.skills-categories').forEach(el => skillObserver.observe(el));
 </script>
 
-<!-- ═══════════════════════════════════════════════════════════
-     ALL EXTERNAL SCRIPTS — loaded at end of body in correct order
-     ═══════════════════════════════════════════════════════════ -->
+<!-- Particle Background -->
+<div id="particles-js" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;"></div>
+
+<!-- ═══════════════════════════════════════════════════
+     EXTERNAL LIBRARIES — correct load order
+     ═══════════════════════════════════════════════════ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js" crossorigin="anonymous"></script>
@@ -1608,149 +1839,277 @@ p{font-size:1.1rem;line-height:1.8;}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" crossorigin="anonymous"></script>
 
+<!-- ── LOADER DISMISS ── -->
 <script>
-/* LOADER DISMISS — runs as soon as all scripts are parsed */
 (function(){
   function dismissLoader(){
-    var loader = document.getElementById("loader");
+    var loader = document.getElementById('loader');
     if(!loader) return;
-    if(typeof gsap !== "undefined"){
-      gsap.to(loader, {opacity:0, duration:0.6, onComplete: function(){ loader.style.display="none"; }});
+    if(typeof gsap !== 'undefined'){
+      gsap.to(loader, {opacity:0, duration:0.6, onComplete: function(){ loader.style.display='none'; }});
     } else {
-      loader.style.transition = "opacity 0.6s";
-      loader.style.opacity = "0";
-      setTimeout(function(){ loader.style.display="none"; }, 650);
+      loader.style.transition = 'opacity 0.6s';
+      loader.style.opacity = '0';
+      setTimeout(function(){ loader.style.display='none'; }, 650);
     }
   }
-  if(document.readyState === "complete"){
-    dismissLoader();
-  } else {
-    window.addEventListener("load", dismissLoader);
-    /* Fallback: force dismiss after 3s no matter what */
+  if(document.readyState === 'complete'){ dismissLoader(); }
+  else {
+    window.addEventListener('load', dismissLoader);
     setTimeout(dismissLoader, 3000);
   }
 })();
 </script>
 
-<!-- Particle Background -->
-<div id="particles-js" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;"></div>
-
+<!-- ── AOS + PARTICLES + TILT + COUNTUP + GSAP ── -->
 <script>
-if(typeof AOS !== "undefined") AOS.init({ duration: 900, once: true });
+// AOS scroll animations
+if(typeof AOS !== 'undefined') AOS.init({ duration: 900, once: true, offset: 60 });
 
 // Particle background
-if(typeof particlesJS !== "undefined") particlesJS("particles-js",{
- "particles":{
-   "number":{"value":60},
-   "color":{"value":"#00e5ff"},
-   "shape":{"type":"circle"},
-   "opacity":{"value":0.4},
-   "size":{"value":3},
-   "line_linked":{"enable":true,"distance":150,"color":"#00e5ff","opacity":0.3,"width":1},
-   "move":{"enable":true,"speed":2}
- }
+if(typeof particlesJS !== 'undefined') particlesJS('particles-js', {
+  particles: {
+    number: { value: 55 },
+    color: { value: '#00e5ff' },
+    shape: { type: 'circle' },
+    opacity: { value: 0.35 },
+    size: { value: 2.5 },
+    line_linked: { enable: true, distance: 150, color: '#00e5ff', opacity: 0.2, width: 1 },
+    move: { enable: true, speed: 1.8 }
+  }
 });
 
-// Card tilt
-if(typeof VanillaTilt !== "undefined") VanillaTilt.init(document.querySelectorAll(".service-card, .product-card, .fraud-card"), {
- max: 5,
- speed: 400,
- glare: true,
- "max-glare": 0.18
-});
+// VanillaTilt on cards
+if(typeof VanillaTilt !== 'undefined'){
+  VanillaTilt.init(document.querySelectorAll('.service-card, .product-card, .fraud-card, .stack-pill'), {
+    max: 5, speed: 400, glare: true, 'max-glare': 0.15
+  });
+}
 
-// CountUp for hero stat numbers - preserves +/% suffixes
-if(typeof CountUp !== "undefined") {
-  document.querySelectorAll(".stat-num").forEach(el=>{
-    const raw = el.innerText.trim();
-    const suffix = raw.replace(/[\d,]/g,'');
-    const end = parseInt(raw.replace(/\D/g,''));
+// CountUp — hero stat numbers, preserves +/% suffix
+if(typeof CountUp !== 'undefined'){
+  document.querySelectorAll('.stat-num').forEach(function(el){
+    var raw    = el.innerText.trim();
+    var suffix = raw.replace(/[\d,]/g, '');
+    var end    = parseInt(raw.replace(/\D/g, ''));
     if(!isNaN(end)){
       try {
-        const Ctor = CountUp.CountUp || CountUp;
-        const counter = new Ctor(el, end, {suffix: suffix, duration: 2.5});
+        var Ctor    = CountUp.CountUp || CountUp;
+        var counter = new Ctor(el, end, { suffix: suffix, duration: 2.5 });
         if(!counter.error) counter.start();
-      } catch(e) { /* CountUp unavailable, show static value */ }
+      } catch(e){}
     }
   });
 }
 
-// GSAP scroll animations
-if(typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") { gsap.registerPlugin(ScrollTrigger);
-
-gsap.utils.toArray("section").forEach(sec=>{
- gsap.from(sec,{
-  opacity:0,
-  y:80,
-  duration:1,
-  scrollTrigger:{
-   trigger:sec,
-   start:"top 80%"
-  }
- });
-}); }
+// GSAP scroll reveal for sections
+if(typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined'){
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.utils.toArray('section').forEach(function(sec){
+    gsap.from(sec, {
+      opacity: 0, y: 60, duration: 1,
+      scrollTrigger: { trigger: sec, start: 'top 82%' }
+    });
+  });
+}
 </script>
 
-
+<!-- ── THREE.JS — background wireframe icosahedron ── -->
 <script>
-/* ===== CURSOR SPOTLIGHT ===== */
-document.addEventListener('mousemove',e=>{
-document.documentElement.style.setProperty('--x',e.clientX+'px');
-document.documentElement.style.setProperty('--y',e.clientY+'px');
+if(typeof THREE !== 'undefined'){
+  var scene    = new THREE.Scene();
+  var camera   = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+  var renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.domElement.style.cssText = 'position:fixed;top:0;left:0;z-index:-3;pointer-events:none;';
+  document.body.appendChild(renderer.domElement);
+
+  var geometry = new THREE.IcosahedronGeometry(2, 0);
+  var material = new THREE.MeshBasicMaterial({ wireframe: true, color: 0x00e5ff, opacity: 0.35, transparent: true });
+  var mesh     = new THREE.Mesh(geometry, material);
+  scene.add(mesh);
+  camera.position.z = 5;
+
+  window.addEventListener('resize', function(){
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
+
+  (function animate(){
+    requestAnimationFrame(animate);
+    mesh.rotation.x += 0.003;
+    mesh.rotation.y += 0.004;
+    renderer.render(scene, camera);
+  })();
+}
+</script>
+
+<!-- ── ANIMATED FRAUD DASHBOARD ── -->
+<script>
+(function(){
+  function initDashboard(){
+    var canvas = document.getElementById('fraudChart');
+    if(!canvas || typeof Chart === 'undefined') return;
+    var labels    = ['00:00','02:00','04:00','06:00','08:00','10:00','12:00','14:00','16:00','18:00','20:00','22:00'];
+    var fraudBase = [12,8,5,3,18,42,67,89,74,55,38,21];
+    var cleanBase = [88,92,95,97,82,58,33,11,26,45,62,79];
+    var chart = new Chart(canvas.getContext('2d'), {
+      type: 'line',
+      data: {
+        labels: labels,
+        datasets: [
+          { label:'Fraud Signals',  data: fraudBase.slice(), borderColor:'rgba(244,63,94,0.9)',  backgroundColor:'rgba(244,63,94,0.08)',  tension:0.45, fill:true, pointRadius:3, borderWidth:2 },
+          { label:'Clean Sessions', data: cleanBase.slice(), borderColor:'rgba(34,211,164,0.9)', backgroundColor:'rgba(34,211,164,0.06)', tension:0.45, fill:true, pointRadius:3, borderWidth:2 }
+        ]
+      },
+      options: {
+        responsive: true, animation: { duration: 600 },
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { grid:{ color:'rgba(255,255,255,0.04)' }, ticks:{ color:'#6b7a99', font:{ size:10, family:'Space Mono' } } },
+          y: { grid:{ color:'rgba(255,255,255,0.04)' }, ticks:{ color:'#6b7a99', font:{ size:10 } }, min:0, max:110 }
+        }
+      }
+    });
+    // Counters
+    function countUp(el, target, suffix){
+      if(!el) return;
+      var cur = 0, step = Math.ceil(target / 40);
+      var t = setInterval(function(){ cur = Math.min(cur+step, target); el.textContent = cur+suffix; if(cur >= target) clearInterval(t); }, 40);
+    }
+    setTimeout(function(){
+      countUp(document.getElementById('dash-blocked'), 247, '');
+      countUp(document.getElementById('dash-clean'),   1893, '');
+      countUp(document.getElementById('dash-score'),   97,   '%');
+    }, 400);
+    // Live update every 2s
+    setInterval(function(){
+      chart.data.datasets[0].data = fraudBase.map(function(v){ return Math.max(0,   v + Math.round(Math.random()*14-7)); });
+      chart.data.datasets[1].data = cleanBase.map(function(v){ return Math.min(110, v + Math.round(Math.random()*14-7)); });
+      chart.update('none');
+      var b = document.getElementById('dash-blocked');
+      var c = document.getElementById('dash-clean');
+      if(b) b.textContent = 247  + Math.round(Math.random()*10-3);
+      if(c) c.textContent = 1893 + Math.round(Math.random()*20-8);
+    }, 2000);
+  }
+  if(document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', initDashboard); }
+  else { initDashboard(); }
+})();
+</script>
+
+<!-- ── CURSOR SPOTLIGHT + MAGNETIC + HAMBURGER ── -->
+<script>
+// Cursor spotlight
+document.addEventListener('mousemove', function(e){
+  document.documentElement.style.setProperty('--x', e.clientX + 'px');
+  document.documentElement.style.setProperty('--y', e.clientY + 'px');
 });
 
-/* ===== MAGNETIC BUTTON ===== */
-document.querySelectorAll('.magnetic').forEach(btn=>{
-btn.addEventListener('mousemove',e=>{
-const rect=btn.getBoundingClientRect();
-const x=e.clientX-rect.left-rect.width/2;
-const y=e.clientY-rect.top-rect.height/2;
-btn.style.transform=`translate(${x*0.2}px,${y*0.2}px)`;
-});
-btn.addEventListener('mouseleave',()=>{
-btn.style.transform='translate(0,0)';
-});
+// Magnetic buttons
+document.querySelectorAll('.magnetic').forEach(function(btn){
+  btn.addEventListener('mousemove', function(e){
+    var rect = btn.getBoundingClientRect();
+    var x = e.clientX - rect.left - rect.width  / 2;
+    var y = e.clientY - rect.top  - rect.height / 2;
+    btn.style.transform = 'translate(' + (x*0.2) + 'px,' + (y*0.2) + 'px)';
+  });
+  btn.addEventListener('mouseleave', function(){
+    btn.style.transform = 'translate(0,0)';
+  });
 });
 
-/* ===== HAMBURGER MENU ===== */
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.querySelector('.nav-links');
+// Hamburger mobile menu
+var hamburger = document.getElementById('hamburger');
+var navLinks  = document.querySelector('.nav-links');
 if(hamburger && navLinks){
-  hamburger.addEventListener('click', () => {
+  hamburger.addEventListener('click', function(){
     hamburger.classList.toggle('open');
     navLinks.classList.toggle('open');
   });
-  navLinks.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
+  navLinks.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
       hamburger.classList.remove('open');
       navLinks.classList.remove('open');
     });
   });
 }
 
+/* Setup (one-time, 2 min):
+   1. emailjs.com → sign up free
+   2. Add Gmail service → copy Service ID → replace YOUR_SERVICE_ID
+   3. Create template with {{from_name}} {{from_email}} {{subject}} {{message}}
+      → copy Template ID → replace YOUR_TEMPLATE_ID
+   4. Account → Public Key → replace YOUR_PUBLIC_KEY  */
 
-/* ===== SIMPLE 3D FLOATING ELEMENT ===== */
-if(typeof THREE !== "undefined") {
-const scene=new THREE.Scene();
-const camera=new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,0.1,1000);
-const renderer=new THREE.WebGLRenderer({alpha:true});
-renderer.setSize(window.innerWidth,window.innerHeight);
-renderer.domElement.style.position='fixed';
-renderer.domElement.style.top='0';
-renderer.domElement.style.zIndex='-3';
-document.body.appendChild(renderer.domElement);
+var EMAILJS_PUBLIC_KEY  = 'nmRcMh7mTaf_ZBOve';
+var EMAILJS_SERVICE_ID  = 'service_3fsrn7p';
+var EMAILJS_TEMPLATE_ID = 'template_jebkbnq';
 
-const geometry=new THREE.IcosahedronGeometry(2,0);
-const material=new THREE.MeshBasicMaterial({wireframe:true,color:0x00e5ff});
-const mesh=new THREE.Mesh(geometry,material);
-scene.add(mesh);
-camera.position.z=5;
+if(typeof emailjs !== 'undefined') emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
 
-function animate(){
-requestAnimationFrame(animate);
-mesh.rotation.x+=0.003;
-mesh.rotation.y+=0.004;
-renderer.render(scene,camera);
+var cfSend = document.getElementById('cf-send');
+if(cfSend){
+  cfSend.addEventListener('click', function(){
+    var name    = (document.getElementById('cf-name').value    || '').trim();
+    var email   = (document.getElementById('cf-email').value   || '').trim();
+    var subject = (document.getElementById('cf-subject').value || '').trim();
+    var message = (document.getElementById('cf-message').value || '').trim();
+    var status  = document.getElementById('cf-status');
+    var btn     = cfSend;
+
+    function showStatus(type, text){
+      var map = {
+        success:{ bg:'rgba(34,211,164,0.08)',  border:'rgba(34,211,164,0.25)',  color:'var(--c4)' },
+        error:  { bg:'rgba(244,63,94,0.08)',   border:'rgba(244,63,94,0.25)',   color:'var(--c6)' },
+        warn:   { bg:'rgba(250,204,21,0.08)',  border:'rgba(250,204,21,0.25)',  color:'var(--c5)' }
+      };
+      var s = map[type];
+      status.style.cssText = 'display:block;background:'+s.bg+';border:1px solid '+s.border+';color:'+s.color+';font-family:var(--font-mono);font-size:0.78rem;padding:10px 14px;border-radius:8px;text-align:center;margin-top:4px;';
+      status.textContent = text;
+    }
+
+    if(!name || !email || !message){
+      showStatus('error', '\u26a0 Please fill in your name, email, and message.'); return;
+    }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+      showStatus('error', '\u26a0 Please enter a valid email address.'); return;
+    }
+
+    // Not configured yet — fallback to mailto
+    if(EMAILJS_PUBLIC_KEY === 'YOUR_PUBLIC_KEY'){
+      var sub  = subject || 'Message from ' + name + ' via ArNova Site';
+      var body = 'Name: ' + name + '\nEmail: ' + email + '\n\n' + message;
+      window.open('mailto:official.abhishant.kumar@gmail.com?subject=' + encodeURIComponent(sub) + '&body=' + encodeURIComponent(body));
+      showStatus('warn', '\u2139 EmailJS not configured \u2014 opened your email client instead.');
+      return;
+    }
+
+    // Send via EmailJS
+    btn.disabled = true;
+    btn.textContent = 'Sending\u2026';
+
+    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+      from_name: name, from_email: email,
+      subject:   subject || 'Message from ' + name + ' via ArNova Site',
+      message:   message, reply_to: email
+    })
+    .then(function(){
+      showStatus('success', '\u2713 Message sent! Abhishant will get back to you soon.');
+      ['cf-name','cf-email','cf-subject','cf-message'].forEach(function(id){ document.getElementById(id).value=''; });
+      btn.textContent = 'Send Message \u2192';
+      btn.disabled = false;
+    })
+    .catch(function(err){
+      showStatus('error', '\u274c Failed to send. Email: official.abhishant.kumar@gmail.com');
+      console.error('EmailJS:', err);
+      btn.textContent = 'Send Message \u2192';
+      btn.disabled = false;
+    });
+  });
 }
-animate();
-} // end THREE guard
+</script>
+
+</body>
+</html>
