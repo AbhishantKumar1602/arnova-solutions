@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://arnovasolutions.netlify.app/sitemap.xml
